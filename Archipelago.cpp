@@ -494,7 +494,6 @@ void AP_Say(std::string text) {
 }
 
 int AP_GetRoomInfo(AP_RoomInfo* client_roominfo) {
-    if (!auth) return 1;
     *client_roominfo = lib_room_info;
     return 0;
 }
